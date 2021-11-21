@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 50px 100px auto;
+      padding: 10px;
+    }
+    .grid-item {
+      border: none;
+      padding: 10px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 35px;
+      text-align: left;
+    }
+    body {
+      margin-top: 10px;
+      margin-bottom: 50px;
+      background-image: url("https://i2.wp.com/guitarandlace.com/wp-content/uploads/2021/01/3-1.jpg?ssl=1");
+    }
+    h2 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color:maroon;
+    }
+    p {
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    a:link, a:visited {
+      background-color: rgba(255, 255, 255, 0.863);
+      color: black;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    a:hover, a:active {
+      background-color:whitesmoke;
+    }
+    img.logo {
+      border-radius: 100%;
+      width: 80px;
+    }
+    .grid-container2 {
+      display: grid;
+      grid-template-columns: 50px auto;
+      padding: 10px;
+    }
+    .grid-item2 {
+      border: none;
+      padding: 10px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+      text-align: left;
+      color:#3d3d5c;
+  </style>
+</head>
+
+<body> 
+
+<div class="header">
+  <div class="grid-container">
+    <div class="grid-item">
+      
+    </div>
+    <div class="grid-item">
+      <img class="logo" src="https://i.pinimg.com/originals/10/69/c1/1069c18560071d07c4fd88fd669e3c96.jpg" alt="Daily Girl">
+    </div>
+    <div class="grid-item">
+      Daily Girl
+    </div> 
+  </div>
+</div>
+
+<div class="container">
+
+  <div>
+    <h2 class="text-center">Top Brand Skincare Lokal 2021</h2>
+    <hr>
+    <p>
+      Beberapa merek lokal dari Indonesia mulai mengembangkan rangkaian skincare, yang tak kalah saing dengan produk-produk luar negeri, untuk mempercepat proses
+      penyembuhan masalah kulit. Skincare merek lokal dijual dengan harga yang ekonomis, tetapi memiliki kualitas yang bagus, dengan menggunakan bahan-bahan aktif
+      maupun alami, dengan fungsi untuk menyembuhkan jerawat, mencerahkan kulit hingga mencegah penuaan dini. Skincare merek lokal juga sangat mudah dijumpai di
+      toko-toko, baik di toko online maupun offline. Berikut rekomendasi skincare merek lokal untuk semua jenis kulit, yang dilansir dari berbagai sumber.
+    </p>
+  </div>
+
+  <div class="card-columns text-white">
+    <div class="card bg-primary">
+      <div class="card-body text-center">
+        <img class="card-img-bottom" src="https://pbs.twimg.com/profile_images/1095600021846683648/QLvzsDld.png" alt="Sariayu" style="width:50%">
+        <h4>Sariayu</h4>
+        <p class="card-text">Rangkaian produk skincare dari brand Emina yaitu Eye cream, Face toner, Face serum, Facial foam, Facial scrub, Moisturizer, Peel off mask, dan minyak zaitun</p>
+        <a href="https://shopee.co.id/sariayu_marthatilaar" target="_blank">Lihat detail</a>
+      </div>
+    </div>
+    <div class="card bg-warning">
+      <div class="card-body text-center">
+        <img class="card-img-bottom" src="https://media.giphy.com/avatars/SomethincOfficial/BMnsKbdJn8k2.jpg" alt="Somethinc" style="width:50%">
+        <h4>Somethinc</h4>
+        <p class="card-text">Rangkaian produk skincare dari brand Somethinc yaitu Facial serum, Facial essence, dan Eye cream</p>
+        <a href="https://shopee.co.id/somethinc" target="_blank">Lihat detail</a>
+      </div>
+    </div>
+    <div class="card bg-danger">
+      <div class="card-body text-center">
+        <img class="card-img-bottom" src="https://2.bp.blogspot.com/-C9cTCe3IsAg/WE4wrAP14YI/AAAAAAAAADQ/6kv0A9kcTsUxk4ynUsaX3lKiiYZOtQGIQCLcB/s1600/eminaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.jpg" alt="Emina" style="width:50%">
+        <h4>Emina</h4>
+        <p class="card-text">Rangkaian produk skincare dari brand Emina yaitu micellar water, face wash, face toner, moisturizer cream, sunscreen, face scrub, dan face mask</p>
+        <a href="https://shopee.co.id/eminaofficial" target="_blank">Lihat detail</a>
+      </div>
+    </div>
+    <div class="card bg-success">
+      <div class="card-body text-center">
+        <img class="card-img-bottom" src="https://id-test-11.slatic.net/shop/ce8bb5df4467f452d7a9fd63f667ba93.jpeg_200x200.jpg" alt="Avoskin" style="width:50%">
+        <h4>Avoskin</h4>
+        <p class="card-text">Rangkaian produk skincare dari brand Avoskin yaitu Facial essence, Facial serum, Facial toner, Face ampoule, Eye ampoule, Eye cream, dan Sunscreen</p>
+        <a href="https://shopee.co.id/avoskinofficial" target="_blank">Lihat detail</a>
+      </div>
+    </div>
+    <div class="card bg-dark">
+      <div class="card-body text-center">
+        <img class="card-img-bottom" src="https://cf.shopee.co.id/file/d761f3246bcc12f1b587d69dd3f9a3a8" alt="Lacoco" style="width:50%">
+        <h4>Lacoco</h4>
+        <p class="card-text">Rangkaian produk skincare dari brand Emina yaitu Facial foam, Soothing mist, Facial essence, Facial serum, Eye serum, Face mask, dan Sunscreen</p>
+        <a href="https://shopee.co.id/lacoco" target="_blank">Lihat detail</a>
+      </div>
+    </div>
+    <div class="card bg-info">
+      <div class="card-body text-center">
+        <img class="card-img-bottom" src="https://assets-a1.kompasiana.com/items/album/2019/05/05/logo-wardah-4-5cceb20e3ba7f7490d331262.png" alt="Wardah" style="width:50%">
+        <h4>Wardah</h4>
+        <p class="card-text">Rangkaian produk skincare dari brand Wardah yaitu Perfect Bright, Acnedrem, White Secret, Renew You, dan C Defense</p>
+        <a href="https://shopee.co.id/wardahofficial" target="_blank">Lihat detail</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <div class="grid-container2">
+    <div class="grid-item2">
+      
+    </div>
+    <div class="grid-item2">
+      <p>Created by PT. Daily Girl</p>
+      <p>Contact us :</p>
+      <li> Ig : @daily_girl </li>
+      <li> WA : 08977401439 </li>
+    </div> 
+  </div>
+</div>
+
+</body>
+</html>
