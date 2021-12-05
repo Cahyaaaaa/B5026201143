@@ -1,26 +1,74 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
-</head>
-<body>
+@extends('layout.ceria')
 
-	<h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
-	<h3>Data Pegawai</h3>
+@section('title', 'PEGAWAI')
 
-	<a href="/pegawai"> Kembali</a>
+@section('isikonten')
+
+@section('judulhalaman', 'DATA PEGAWAI')
+
+	<a href="/pegawai"><button class="btn btn-info">Kembali</button></a>
 
 	<br/>
 	<br/>
 
 	<form action="/pegawai/store" method="post">
 		{{ csrf_field() }}
-		Nama <input type="text" name="nama" required="required"> <br/>
-		Jabatan <input type="text" name="jabatan" required="required"> <br/>
-		Umur <input type="number" name="umur" required="required"> <br/>
-		Alamat <textarea name="alamat" required="required"></textarea> <br/>
-		<input type="submit" value="Simpan Data">
+
+        <div class="col-8">
+            <div class="row">
+                <div class="col-3">
+                    Nama
+                </div>
+                <div class="col-1">
+                    :
+                </div>
+                <div class="col-8">
+                    <input type="text" name="nama" required="required" style="width: 100%">
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-3">
+                    Jabatan
+                </div>
+                <div class="col-1">
+                    :
+                </div>
+                <div class="col-8">
+                    <input type="text" name="jabatan" required="required" style="width: 100%">
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-3">
+                    Umur
+                </div>
+                <div class="col-1">
+                    :
+                </div>
+                <div class="col-8">
+                    <input type="number" name="umur" required="required" style="width: 100%">
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-3">
+                    Alamat
+                </div>
+                <div class="col-1">
+                    :
+                </div>
+                <div class="col-8">
+                    <textarea name="alamat" required="required" style="width: 100%"></textarea>
+                </div>
+            </div>
+            <br/>
+            <center><input type="submit" value="Simpan Data"></center>
+        </div>
+        <div class="col-4">
+
+        </div>
+
 	</form>
 
-</body>
-</html>
+@endsection

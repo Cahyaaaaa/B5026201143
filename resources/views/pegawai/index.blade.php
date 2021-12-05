@@ -1,20 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
-</head>
-<body>
+@extends('layout.ceria')
 
-	<h2>www.malasngoding.com</h2>
-	<h3>Data Pegawai</h3>
+@section('title', 'PEGAWAI')
 
-	<a href="/pegawai/tambah"> + Tambah Pegawai Baru</a>
+@section('isikonten')
+
+@section('judulhalaman', 'DATA PEGAWAI')
+
+	<a href="/pegawai/tambah"><button class="rounded" style="background-color:#0066ff; border-color:white; color:white; width: 200px"> + Tambah Pegawai Baru </button></a>
 
 	<br/>
 	<br/>
 
-	<table border="1">
-		<tr>
+	<table class="table table-info table-striped table-bordered" border="1">
+		<tr style="text-align: center">
 			<th>Nama</th>
 			<th>Jabatan</th>
 			<th>Umur</th>
@@ -22,20 +20,18 @@
 			<th>Opsi</th>
 		</tr>
 		@foreach($pegawai as $p)
-		<tr>
+		<tr style="text-align: center">
 			<td>{{ $p->pegawai_nama }}</td>
 			<td>{{ $p->pegawai_jabatan }}</td>
 			<td>{{ $p->pegawai_umur }}</td>
 			<td>{{ $p->pegawai_alamat }}</td>
 			<td>
-				<a href="/pegawai/edit/{{ $p->pegawai_id }}">Edit</a>
+				<a href="/pegawai/edit/{{ $p->pegawai_id }}"><button class="btn btn-warning"> Edit </button></a>
 				|
-				<a href="/pegawai/hapus/{{ $p->pegawai_id }}">Hapus</a>
+				<a href="/pegawai/hapus/{{ $p->pegawai_id }}"><button class="btn btn-danger"> Hapus </button></a>
 			</td>
 		</tr>
 		@endforeach
 	</table>
 
-
-</body>
-</html>
+@endsection

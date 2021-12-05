@@ -6,38 +6,75 @@
 
 @section('judulhalaman', 'EDIT ABSEN')
 
-<h1>{{ $judul }}</h1>
+    <a href="/absen"><button class="btn btn-info">Kembali</button></a>
+
 	@foreach($absen as $p)
 	<form action="/absen/update" method="post">
 		{{ csrf_field() }}
 		<input type="hidden" name="id" value="{{ $p->ID }}"> <br/>
-        Pegawai <select id="IDPegawai" name="IDPegawai" required="required">
-            @foreach($pegawai as $peg)
-                <option value="{{ $peg->pegawai_id }}" @if ($peg->pegawai_id === $p->IDPegawai) selected="selected" @endif> {{ $peg->pegawai_nama }}</option>
-            @endforeach
-        </select><br>
-        <div class="form-group">
-            <label for="dtpickerdemo" class="col-sm-2 control-label">Tanggal :</label>
-                <div class='col-sm-4 input-group date ' id='dtpickerdemo'>
-                    <input type='text' class="form-control" name="tanggal" value="{{ $p->Tanggal }}"/>
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
+
+        <div class="col-8" style="color:black">
+            <div class="row">
+                <div class="col-3">
+                    Pegawai
+                </div>
+                <div class="col-1">
+                    :
+                </div>
+                <div class="col-8">
+                    <select id="IDPegawai" name="IDPegawai" style="width:100%" required="required">
+                        @foreach($pegawai as $peg)
+                            <option value="{{ $peg->pegawai_id }}" @if ($peg->pegawai_id === $p->IDPegawai) selected="selected" @endif> {{ $peg->pegawai_nama }}</option>
+                        @endforeach
+                    </select><br>
                 </div>
             </div>
-            <script type="text/javascript">
-                $(function () {
-                    $('#dtpickerdemo').datetimepicker({format : "YYYY-MM-DD hh:mm", "defaultDate":new Date() });
-                });
-            </script>
-            <br>
-		Status
-        <input type="radio" id="hadir" name="status" value="H" @if ($p->Status === "H") checked="checked" @endif>
-        <label for="hadir">HADIR</label>
-        <input type="radio" id="tidak" name="status" value="T" @if ($p->Status === "T") checked="checked" @endif>
-        <label for="tidak">TIDAK HADIR</label><br>
+            <br/>
+            <div class="form-group">
+            <div class="row">
+                <div class="col-3">
+                    <label for="dtpickerdemo" class="control-label">Tanggal :</label>
+                </div>
+                <div class="col-1">
+                    :
+                </div>
+                <div class="col-8">
+                    <div class='input-group date' id='dtpickerdemo' style="width: 100%">
+                        <input type='text' class="form-control" name="tanggal" value="{{ $p->Tanggal }}"/>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                    <script type="text/javascript">
+                        $(function () {
+                            $('#dtpickerdemo').datetimepicker({format : "YYYY-MM-DD hh:mm", "defaultDate":new Date() });
+                        });
+                    </script>
+                </div>
+            </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-3">
+                    Status
+                </div>
+                <div class="col-1">
+                    :
+                </div>
+                <div class="col-8">
+                    <input type="radio" id="hadir" name="status" value="H" @if ($p->Status === "H") checked="checked" @endif>
+                    <label for="hadir">HADIR</label> <br>
+                    <input type="radio" id="tidak" name="status" value="T" @if ($p->Status === "T") checked="checked" @endif>
+                    <label for="tidak">TIDAK HADIR</label>
+                </div>
+            </div>
+            <br/>
+            <center><input type="submit" value="Simpan Data"></center>
+        </div>
+        <div class="col-4">
 
-		<input type="submit" value="Simpan Data">
+        </div>
+
 	</form>
 	@endforeach
 
