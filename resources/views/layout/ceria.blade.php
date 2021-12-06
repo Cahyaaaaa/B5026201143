@@ -27,6 +27,10 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/icon/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="/icon/apple-touch-icon-57-precomposed.png">
 
+    <!-- Setting Tanggal -->
+    <link rel="stylesheet" href="/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="/js/bootstrap-datetimepicker.min.css">
+
 </head>
 
 <body>
@@ -54,14 +58,14 @@
 
             <!-- Menu Sidebar-->
             <ul class="list-unstyled menu-elements">
-                <li class="active">
-                    <a class="scroll-link" href="/pegawai"><i class="fas fa-home"></i> Pegawai </a>
+                <li>
+                    <a href="/pegawai"><i class="fas fa-home"></i> Pegawai </a>
                 </li>
                 <li>
-                    <a class="scroll-link" href="/absen"><i class="fas fa-cog"></i> Absen </a>
+                    <a href="/absen"><i class="fas fa-cog"></i> Absen </a>
                 </li>
                 <li>
-                    <a class="scroll-link" href="#"><i class="fas fa-user"></i> Next Project</a>
+                    <a href="#"><i class="fas fa-user"></i> Next Project</a>
                 </li>
 
         </nav>

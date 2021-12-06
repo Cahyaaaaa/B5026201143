@@ -39,7 +39,16 @@
                     :
                 </div>
                 <div class="col-8">
-                    <div class='input-group date' id='dtpickerdemo' style="width: 100%">
+                    <div class="form-group">
+                        <div class="input-group date" id="datetimepicker">
+                            <input type="text" class="form-control">
+                            <div class="input-group-addon input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class='input-group date' id='dtpickerdemo' style="width: 100%">
                         <input type='text' class="form-control" name="tanggal" value="{{ $p->Tanggal }}"/>
                         <span class="input-group-addon">
                             <span class="glyphicon glyphicon-calendar"></span>
@@ -49,7 +58,7 @@
                         $(function () {
                             $('#dtpickerdemo').datetimepicker({format : "YYYY-MM-DD hh:mm", "defaultDate":new Date() });
                         });
-                    </script>
+                    </script> -->
                 </div>
             </div>
             </div>
