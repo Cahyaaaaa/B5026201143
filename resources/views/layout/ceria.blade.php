@@ -15,10 +15,10 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" href="/css/animate.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/media-queries.css">
+    <link rel="stylesheet" href="{{ asset('/css/jquery.mCustomScrollbar.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/media-queries.css') }}">
 
     <!-- Favicon and touch icons -->
     <link rel="shortcut icon" href="/icon/favicon.png">
@@ -27,9 +27,22 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/icon/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="/icon/apple-touch-icon-57-precomposed.png">
 
-    <!-- Setting Tanggal -->
-    <link rel="stylesheet" href="/css/bootstrap-datetimepicker.min.css">
-    <link rel="stylesheet" href="/js/bootstrap-datetimepicker.min.css">
+    <!-- Datetime picker -->
+    {{-- <meta name="description" content="Sufee Admin - HTML5 Admin Template"> --}}
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap-datetimepicker.min.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('style/sufee-master/vendors/bootstrap/dist/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('style/sufee-master/vendors/font-awesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('style/sufee-master/vendors/themify-icons/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('style/sufee-master/vendors/flag-icon-css/css/flag-icon.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('style/sufee-master/vendors/selectFX/css/cs-skin-elastic.css') }}">
+    <link rel="stylesheet" href="{{ asset('style/sufee-master/assets/css/style.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'> --}}
+    {{-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('/css/bootstrap-datetimepicker.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/js/bootstrap-datetimepicker.min.js') }}"> --}}
 
 </head>
 
@@ -65,7 +78,7 @@
                     <a href="/absen"><i class="fas fa-cog"></i> Absen </a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-user"></i> Next Project</a>
+                    <a href="/minuman"><i class="fas fa-user"></i> Minuman </a>
                 </li>
 
         </nav>
@@ -79,29 +92,29 @@
         <br>
 
         <!-- header -->
-            <header>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-2">
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-2">
 
-                        </div>
-                        <div class="col-8">
-                            <h1><strong>
-                                Cahya Wulaningtyas <br>
-                                {5026201143}
-                            </strong></h1>
-                        </div>
-                        <div class="col-2">
-                            <img src="/gambar/pasfoto.jpg" class="rounded-circle" width="130px" height="130px">
-                        </div>
+                    </div>
+                    <div class="col-8">
+                        <h1><strong>
+                            Cahya Wulaningtyas <br>
+                            {5026201143}
+                        </strong></h1>
+                    </div>
+                    <div class="col-2">
+                        <img src="/gambar/pasfoto.jpg" class="rounded-circle" width="130px" height="130px">
                     </div>
                 </div>
-            </header>
+            </div>
+        </header>
 
         <!-- Content -->
         <div class="container">
             <div class="content" id="main">
-                <h2> <strong> @yield('judulhalaman') <strong> </h2>
+                <h2 align="left"> <strong> @yield('judulhalaman') <strong> </h2>
 
                 @section('isikonten')
                 @show
@@ -109,8 +122,8 @@
         </div>
 
         <!-- Footer -->
-        <footer class="footer-container">
-            &copy; Cahya Wulaningtyas - 5026201143
+        <footer>
+            <h4 style="color: white">&copy; Cahya Wulaningtyas - 5026201143</h4>
         </footer>
 
     <!-- Javascript -->

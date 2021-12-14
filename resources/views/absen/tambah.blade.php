@@ -40,17 +40,7 @@
                     :
                 </div>
                 <div class="col-8">
-                    <div class='input-group date ' id='dtpickerdemo' style="width: 100%">
-                        <input type='text' class="form-control" name="tanggal" />
-                        <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-calendar"></span>
-                        </span>
-                    </div>
-                    <script type="text/javascript">
-                        $(function () {
-                            $('#dtpickerdemo').datetimepicker({format : "YYYY-MM-DD hh:mm", "defaultDate":new Date() });
-                        });
-                    </script>
+                    <input type="datetime-local" class="form-control" required="required" name="tanggal" >
                 </div>
             </div>
             </div>
