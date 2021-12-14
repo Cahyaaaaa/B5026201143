@@ -1,10 +1,10 @@
 @extends('layout.ceria')
 
-@section('title', 'PEGAWAI')
+@section('title', 'Detail Pegawai')
 
 @section('isikonten')
 
-@section('judulhalaman', 'EDIT PEGAWAI')
+@section('judulhalaman', 'DETAIL PEGAWAI')
 
 	<a href="/pegawai"><button class="btn btn-info"> Kembali </button></a>
 
@@ -45,6 +45,11 @@
                     <label class="col-8" for="alamat">{{ $p->pegawai_alamat }}</label>
                 </div>
             </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
         </div>
         <div class="col-4">
 

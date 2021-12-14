@@ -1,6 +1,6 @@
 @extends('layout.ceria')
 
-@section('title', 'MINUMAN')
+@section('title', 'Tambah Data Minuman')
 
 @section('isikonten')
 
@@ -43,6 +43,9 @@
             </div>
             <br/>
             <center><button type="submit" class="col-2 form-control btn-secondary">Simpan Data</button></center>
+            <br/>
+            <br/>
+            <br/>
         </div>
         <div class="col-4">
 

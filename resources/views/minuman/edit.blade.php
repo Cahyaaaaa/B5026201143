@@ -1,10 +1,10 @@
 @extends('layout.ceria')
 
-@section('title', 'MINUMAN')
+@section('title', 'Edit Data MINUMAN')
 
 @section('isikonten')
 
-@section('judulhalaman', 'EDIT STOCK MINUMAN')
+@section('judulhalaman', 'EDIT DATA MINUMAN')
 
 	<a href="/minuman"><button class="btn btn-info"> Kembali </button></a>
 
@@ -43,8 +43,10 @@
                     <label for="tidak">TIDAK Tersedia</label>
                 </div>
             </div>
-            <br/>
             <center><button type="submit" class="col-2 form-control btn-secondary">Simpan Data</button></center>
+            <br/>
+            <br/>
+            <br/>
         </div>
         <div class="col-4">
 

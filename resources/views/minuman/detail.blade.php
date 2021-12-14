@@ -1,10 +1,10 @@
 @extends('layout.ceria')
 
-@section('title', 'DETAIL MINUMAN')
+@section('title', 'Detail Data Minuman')
 
 @section('isikonten')
 
-@section('judulhalaman', 'DETAIL STOCK MINUMAN')
+@section('judulhalaman', 'DETAIL DATA MINUMAN')
 
 	<a href="/minuman"><button class="btn btn-info"> Kembali </button></a>
 
@@ -37,6 +37,13 @@
                     <label class="col-3"> {{ $p->tersedia }} </label>
                 </div>
             </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
         </div>
         <div class="col-4">
 

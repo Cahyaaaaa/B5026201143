@@ -1,6 +1,6 @@
 @extends('layout.ceria')
 
-@section('title', 'ABSEN PEGAWAI')
+@section('title', 'Edit Absen')
 
 @section('isikonten')
 
@@ -60,6 +60,9 @@
             </div>
             <br/>
             <center><input type="submit" value="Simpan Data"></center>
+            <br/>
+            <br/>
+            <br/>
         </div>
         <div class="col-4">
 

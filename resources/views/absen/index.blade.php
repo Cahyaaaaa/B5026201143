@@ -1,6 +1,6 @@
 @extends('layout.ceria')
 
-@section('title', 'ABSEN PEGAWAI')
+@section('title', 'Absen Pegawai')
 
 @section('isikonten')
 
@@ -46,5 +46,11 @@
 	</table>
 
     {{ $absen->links() }}
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
 
 @endsection

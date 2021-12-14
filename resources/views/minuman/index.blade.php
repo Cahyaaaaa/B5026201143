@@ -1,10 +1,10 @@
 @extends('layout.ceria')
 
-@section('title', 'Minuman')
+@section('title', 'Data Minuman')
 
 @section('isikonten')
 
-@section('judulhalaman', 'DATA MINUMAN')
+@section('judulhalaman', 'DATA STOCK MINUMAN')
 
     <a href="/minuman/tambah"><button class="rounded" style="background-color:#0066ff; border-color:white; color:white; width: 200px"> + Tambah Minuman Baru </button></a>
 
@@ -48,5 +48,10 @@
 	</table>
 
     {{ $minuman->links() }}
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
 
 @endsection
