@@ -60,7 +60,7 @@
                 </div>
             </div>
             <br/>
-            <center><input type="submit" value="Simpan Data"></center>
+            <center><button type="submit" class="col-2 form-control btn-secondary">Simpan Data</button></center>
             <br/>
             <br/>
             <br/>
