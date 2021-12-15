@@ -58,3 +58,9 @@ Route::post('/minuman/update','MinumanController@update');
 Route::get('/minuman/hapus/{kode}','MinumanController@hapus');
 Route::get('/minuman/cari','MinumanController@cari');
 Route::get('/minuman/detail/{kode}', 'MinumanController@view');
+
+//route CRUD
+Route::get('/karyawan1','Karyawan1Controller@index');
+Route::get('/karyawan1/edit/{nip}','Karyawan1Controller@edit');
+Route::post('/karyawan1/update','Karyawan1Controller@update');
+Route::get('/karyawan1/detail/{nip}', 'Karyawan1Controller@view');

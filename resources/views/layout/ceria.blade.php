@@ -80,6 +80,9 @@
                 <li>
                     <a href="/minuman"><i class="fas fa-user"></i> Minuman </a>
                 </li>
+                <li>
+                    <a href="#"><i class="fas fa-file"></i> Evaluasi tengah Semester </a>
+                </li>
 
         </nav>
         <!-- End sidebar -->

@@ -72,4 +72,4 @@
 	@endforeach
 
 
-    @endsection
+@endsection
