@@ -24,7 +24,7 @@
 			<td>{{ $loop->iteration }}</td>
             <td>{{ $p->Nama }}</td>
 			<td>{{ $p->Pangkat }}</td>
-            <td>{{ $p->Gaji }}</td>
+            <td id="gaji">{{ $p->Gaji }}</td>
 			<td>
 				<a href="/karyawan1/detail/{{ $p->NIP }}"><button class="btn btn-primary"> View Details </button></a>
                 |

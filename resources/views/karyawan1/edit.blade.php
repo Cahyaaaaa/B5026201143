@@ -37,7 +37,7 @@
                 <label class="col-3" for="gaji"> Gaji </label>
                 <div class="col-1">:</div>
                 <div class="col-8">
-                    <input type="number" name="gaji" required="required" value="{{ $p->Gaji }}" style="width: 100%">
+                    <input type="number" name="gaji" id="gaji" required="required" value="{{ $p->Gaji }}" style="width: 100%">
                 </div>
             </div>
             <br/>

@@ -34,7 +34,7 @@
                 <label class="col-3" for="gaji"> Gaji </label>
                 <div class="col-1">:</div>
                 <div class="col-8">
-                    <label class="col-3"> {{ $p->Gaji }} </label>
+                    <label class="col-3" id="gaji"> {{ $p->Gaji }} </label>
                 </div>
             </div>
             <br/>
